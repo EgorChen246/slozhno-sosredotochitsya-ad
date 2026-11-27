@@ -21,33 +21,52 @@
   </head>
 
   <body class="page">
-    <header class="header decorated-zone">
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="page__inner"></div>
+      <header class="header decorated-zone">
+        <span class="header__rec" aria-hidden="true">
+          REC
+        </span>
+
+        <nav class="header__theme-menu" aria-label="Переключение темы">
+          <ul class="header__theme-menu-list">
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_type_light"
+                type="button"
+              >
+                День
+              </button>
+            </li>
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+                type="button"
+                disabled
+              >
+                Авто
+              </button>
+            </li>
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_type_dark"
+                type="button"
+              >
+                Неон
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__content">
+          <h1 class="header__title">
+            сложно сосредоточиться
+          </h1>
+          <p class="header__description title-decor">
+            А когда всё время отвлекаешься, сложно работать и просто жить.
+            Здесь собраны техники, которые помогут вернуть внимание.
+          </p>
+        </div>
+      </header>
+    </div>  
   </body>
 </html>
