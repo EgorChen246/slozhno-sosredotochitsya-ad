@@ -316,3 +316,18 @@ a:focus-visible {
     grid-row: 3 / 4;
   }
 }
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    justify-self: flex-end;
+    align-self: flex-start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .section {
+    column-gap: 30px;
+  }
+}
