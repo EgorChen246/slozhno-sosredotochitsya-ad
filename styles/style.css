@@ -200,3 +200,34 @@
 .card__text {
   font-size: var(--font-size-m);
 }
+
+.gallery__grid {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery__image {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.gallery__item:first-child,
+.gallery__item:last-child {
+  block-size: auto;
+}
+
+a {
+  text-decoration: none;
+  text-shadow: 1px 1px 0 var(--accent-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 1px solid var(--accent-color);
+  outline-offset: 2px;
+}
